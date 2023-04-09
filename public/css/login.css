@@ -1,0 +1,60 @@
+@import url('https://fonts.googleapis.com/css2?family=Piazzolla:opsz,wght@8..30,100;8..30,200;8..30,300;8..30,400&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* font-family: 'Piazzolla', serif; */
+    font-size: large;
+}
+.body{
+    background-color: whitesmoke;
+    background-image: url("../photos/hostel.jpg");
+    /* background-repeat: no-repeat; */
+    background-size: cover;
+}
+
+.navb{
+    font-family: 'Piazzolla', serif;
+}
+
+/* :root{
+    --main-bg : black;
+    --main-color: white;
+} */
+
+.box{
+
+    margin-top: 50px;
+    display: inline-flex;
+    height: 450px;
+    width: 100%;
+    
+}
+/* .image{
+    margin: 10px;
+    
+    padding: 10px;
+    height: 400px;
+    width: 300px;
+    border: 2px solid black;
+    background-color: white;
+} */
+
+.body .card{
+    margin: 10px;
+    margin-left: 600px;
+    padding: 10px;
+    height: 400px;
+    width: 350px;
+    border: 2px solid black;
+    background-color: white;
+}
+.fon{
+    font-family: 'Piazzolla', serif;
+}
+.buton{
+    margin-left: 130px;
+    width: 150px;
+    /* font-family: 'Courier New', Courier, monospace; */
+}

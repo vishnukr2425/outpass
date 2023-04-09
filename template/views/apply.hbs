@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>National Institute of Technology Hamirpur - Outpass Application</title>
+    <link rel="stylesheet" type="text/css" href="css/apply.css">
+  </head>
+  <body>
+    <header>
+      <div class="header-container">
+        <div class="logo">
+          <h1>National Institute of Technology Hamirpur</h1>
+          
+        </div>
+      </div>
+    </header>
+  <head>
+    <title>OutPass Form</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <form action="/apply" method="POST">
+      <h1>Out Pass Form</h1>
+      <div class="form-group">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name">
+      </div>
+      <div class="form-group">
+        <label for="roll-no">Roll No:</label>
+        <input type="text" id="roll-no" name="roll">
+      </div>
+      <div class="form-group">
+        <label for="hostel">Hostel:</label>
+        <select id="hostel" name="hostel">
+          <option value=" ">Select</option>
+          <option value="Himgiri Boys Hostel">Himgiri Boys Hostel</option>
+          <option value="Himadri Boys Hostel">Himadri Boys Hostel</option>
+          <option value="NBH">NBH</option>
+          <option value="KBH">KBH</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label for="room-no">Room No:</label>
+        <input type="text" id="room-no" name="room">
+      </div>
+      <div class="form-group">
+        <label for="phone-no">Phone No:</label>
+        <input type="text" id="phone-no" name="phone">
+      </div>
+      <div class="form-group">
+        <label for="departure-date">Departure Date:</label>
+        <input type="date" id="departure-date" name="departure">
+      </div>
+      <div class="form-group">
+        <label for="return-date">Return Date:</label>
+        <input type="date" id="return-date" name="return">
+      </div>
+      <div class="form-group">
+        <label for="reason">Reason:</label>
+        <select id="reason" name="reason">
+          <option value="personal">Personal</option>
+          <option value="market">Market</option>
+          <option value="home">Home</option>
+          <option value="medical">Medical Emergency</option>
+        </select>
+      </div>
+      <button type="submit">Submit</button>
+    </form>
+  </body>
+</html>

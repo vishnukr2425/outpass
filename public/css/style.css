@@ -1,3 +1,136 @@
+/* CSS OF HOMEPAGE */
+
+body {
+	margin: 0;
+	font-family: Arial, sans-serif;
+	font-size: 16px;
+	line-height: 1.4;
+}
+main {
+	max-width: 1200px;
+	margin: 80px auto 32px auto;
+	padding: 0 16px;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	align-items: center;
+}
+
+#photo {
+	flex: 1;
+	margin-top: 150px;
+	margin-right: 32px;
+}
+
+#photo img {
+	max-width: 100%;
+	height: auto;
+	display: block;
+	border-radius: 8px;
+	box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+#intro {
+	flex: 1;
+	max-width: 500px;
+	margin-right: auto;
+	margin-left: 0;
+}
+
+#intro h3 {
+	margin-top: 100px;
+	color: #1d2129;
+	font-size: 24px;
+	font-weight: bold;
+}
+
+#intro p {
+	margin-top: 50px;
+	font-weight: bold;
+	font-size: 20px;
+	line-height: 1.5;
+	color: #4b4f56;
+}
+
+/* Footer styles */
+footer {
+	background-color: #fff;
+	padding: 16px;
+	text-align: center;
+}
+
+footer p {
+	margin: 0;
+	color: #4b4f56;
+	font-weight: bold;
+	font-size: 20px;
+	line-height: 1.5;
+}
+
+
+header {
+	background-color: #fff;
+	box-shadow: 0 1px 0 rgba(0, 0, 0, 0.06), 0 2px 3px rgba(0, 0, 0, 0.1);
+	padding: 12px 16px;
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	z-index: 999;
+}
+
+.header-container {
+	max-width: 1200px;
+	margin: 0 auto;
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+}
+
+.logo {
+	flex: 1;
+	font-size: 24px;
+	font-weight: bold;
+	margin: 0;
+	color: #1877f2;
+	text-align: center;
+}
+
+.logo h1 {
+	margin: 0;
+    font-size: 50px;
+}
+
+.logo h2 {
+	margin: 0;
+	font-size: 24px;
+	font-weight: normal;
+	color: #1d2129;
+}
+
+nav ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	display: flex;
+}
+
+nav li {
+	margin-left: 16px;
+}
+
+nav a {
+	display: block;
+	padding: 8px 12px;
+	text-decoration: none;
+	color: #1d2129;
+	border-radius: 9999px;
+	transition: background-color 0.3s ease
+}
+
+/* CSS OF HOMEPAGE ENDS HERE */
+
+/* CSS OF REGUISTER PAGE STARTS HERE */
 @import url('https://fonts.googleapis.com/css2?family=Piazzolla:opsz,wght@8..30,100;8..30,200;8..30,300;8..30,400&display=swap');
 
 *{
@@ -6,25 +139,27 @@
     box-sizing: border-box;
     font-family: 'Piazzolla', serif;
     font-size: large;
-    
 }
 .body{
-    background-color: azure;
+    /* background-color: azure; */
+    background-image: url("../photos/hostel.jpg");
+    /* background-repeat: no-repeat; */
+    background-size: cover;
 }
-h1{
+/* h1{
     color: #9F24AD;
     background-color: aqua;
     border: 2px solid red;
-}
+} */
 
 :root{
     --main-bg : black;
     --main-color: white;
 }
 
-html {
+/* html {
     font-size: 62.5%;
-}
+} */
 
 .row{
     margin: 0;
@@ -43,25 +178,28 @@ html {
     /* /* max-width: 700px; */
     width: 80%;
     height: 570px;
-    margin-top: 100px;
+    margin-top: 50px;
     margin-left: 10%;
     margin-right: 10%;
     padding: 10px;
     justify-content: center;
     align-items: center;
-    background-color: rgb(0, 26, 255);
+    /* background-color: rgb(0, 26, 255); */
     /* border-radius: 20px; */
 }
 .box .justout{
     float: right;
-    background-color: aliceblue;
+    background-color: whitesmoke;
     border: 2px solid rgb(4, 78, 1);
     height: 520px;
     width: 60%;
     margin-right: 50px;
     margin-top: 20px;
     margin-bottom: 20px;
-    border-radius: 12% 0% 0% 12% / 50% 10% 10% 47% ;   
+    border-radius: 12% 0% 0% 12% / 50% 10% 10% 47% ;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+    /* border-radius: 50px 50px 50px 50px / 95px 95px 95px 95px; */
 }
 .box .justout .reg{
     float: right;
@@ -73,9 +211,10 @@ html {
 }
 
 .box .title{
+    padding-top: 30px;
     text-align: center;
     /* margin-right: 300px; */
-    font-size: larger;
+    font-size: xx-large;
     font-weight: bolder;
 }
 .box .fom{
@@ -86,6 +225,7 @@ html {
     width: 100%;
     /* margin: 20px; */
     padding: 10px;
+    padding-right: 30px;
     justify-content: center;
     align-items: center;
       
@@ -97,7 +237,7 @@ html {
 .box .fom .user-details{
     /* display: flex; */
     flex-wrap:wrap;
-    justify-content: space-between;
+    justify-content: space-around;
 }
 .box .fom .user-details .inner{
     display: flex;
@@ -222,3 +362,5 @@ form .button input{
 .main_header_right img{
     height: 500px;
 }
+
+/* CSS OF REGUISTER PAGE STARTS HERE */
