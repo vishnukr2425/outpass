@@ -21,10 +21,19 @@ app.set("view engine","hbs");
 app.set("views", viewspath);
 
 app.get("/",(req,res)=>{
-    res.render("register")
+    res.render("index")
 });
 app.get("/register",(req, res)=>{
     res.render("register");
+})
+app.get("/login",(req, res)=>{
+    res.render("login");
+})
+app.get("/apply",(req, res)=>{
+    res.render("apply");
+})
+app.get("/confirm",(req, res)=>{
+    res.render("confirm");
 })
 
 app.post("/register", async(req, res)=>{
@@ -44,7 +53,7 @@ app.post("/register", async(req, res)=>{
              confirmpassword: req.body.conpswd
          })
          const rgd= await regEmp.save();
-         res.status(201).render("index");
+         res.status(201).render("apply");
      }
      else{
          res.send("Passwords are not matching");

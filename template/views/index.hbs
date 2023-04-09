@@ -1,48 +1,38 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html>
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>index</title>
-
-  <link rel="stylesheet" href="css/style.css">
-
-  <!-- font awesome -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css"
-    integrity="sha512-PgQMlq+nqFLV4ylk1gwUOgm6CtIIXkKwaIHp/PAIWHzig/lKZSEGKEysh0TCVbHJXCLN7WetD8TFecIky75ZfQ=="
-    crossorigin="anonymous" referrerpolicy="no-referrer" />
-  <!--  bootstap  -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
-    
+	<title>National Institute of Technology Hamirpur - Outpass Application</title>
+	<link rel="stylesheet" href="css/style.css">
+	<!-- type="css/style.css"  -->
 </head>
-
-<body class="body">
-  {{>navbar}}
-
-  <div class="container-fluid main_menu">
-    <div class="row">
-      <div class="col-md-12 col-12 mx-auto">
-        <div class="row">
-          <div class="col-md-6 col12 main_header_left">
-            <p>Online OutPass Application</p>
-            <h2>We Are<span>Full Stack Devloper</span>. Contact Us For Developing Awesomes Websites.😁</h2>
-          </div>
-
-          <div class="col-md-6 col-12 main_header_right">
-            <figure>
-              <img src="./photos/pic2.png" alt="Vishnu and Saurabh" title="SV Technical">
-            </figure>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
-    crossorigin="anonymous"></script>
+<body>
+	<header>
+		<div class="header-container">
+			<div class="logo">
+				<h1>National Institute of Technology Hamirpur</h1>
+				<h2>Welcome to the Outpass Application of NIT Hamirpur</h2>
+			</div>
+			<nav>
+				<ul>
+					<li><a href="/login">Login</a></li>
+					<li><a href="/register">Register</a></li>
+				</ul>
+			</nav>
+		</div>
+	</header>
+	<main>
+		<section id="photo">
+			<img src="./photos/nith.jpeg" alt="photo">
+		</section>
+		<section id="intro">
+			<h3>About the Site</h3>
+			<p>Here you can apply for an outpass to leave the campus for a specified period of time. Please make sure to fill all the required information correctly.</p>
+			<p> </p>
+		</section>
+	</main>
+	
+	<footer>
+		<p>Travel safely.</p>
+	</footer>
 </body>
-
 </html>
